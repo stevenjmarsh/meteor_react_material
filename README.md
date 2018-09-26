@@ -6,6 +6,7 @@ A simple boilerplate to start projects with Meteor, React, and Material-UI.
 * Meteor
 * React
 * React Router
+* Material-UI
 * Eslint
 * Prettier
 * Jest
