@@ -6,7 +6,8 @@
     "lint": "eslint . --ext .js,.jsx --ignore-pattern 'packages/**'",
     "test": "npm run unit-test",
     "unit-test": "jest -c .jest-config.json",
-    "update-snapshots": "jest -c .jest-config.json --updateSnapshot"
+    "update-snapshots": "jest -c .jest-config.json --updateSnapshot",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",
@@ -17,9 +18,11 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.1.6",
+    "@storybook/react": "^4.0.7",
     "babel-eslint": "^8.2.6",
     "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
