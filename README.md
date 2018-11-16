@@ -5,18 +5,16 @@ A simple boilerplate to start projects with Meteor, React, and Material-UI.
 ## Installed Components
 * Meteor
 * React
-* React Router
 * Material-UI
 * Eslint
 * Prettier
 * Jest
 * Storybook
-* TODO
-  - Redux
-  - Redux Forms
-  - Flow (TBD)
-
-NOTE: check this project for other useful packages and setup steps.
+* TODO / TBD
+    - React Router
+    - Redux
+    - Redux Forms
+    - Flow
 
 ## Tech Notes
 * Roboto Font is included via link in main.html
