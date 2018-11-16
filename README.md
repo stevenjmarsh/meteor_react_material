@@ -10,10 +10,10 @@ A simple boilerplate to start projects with Meteor, React, and Material-UI.
 * Eslint
 * Prettier
 * Jest
+* Storybook
 * TODO
   - Redux
   - Redux Forms
-  - Storybook
   - Flow (TBD)
 
 NOTE: check this project for other useful packages and setup steps.
