@@ -6,6 +6,9 @@ import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 import App from "../imports/ui/App";
 
 const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true,
+  },
   palette: {
     // modify theme settings here.
   },

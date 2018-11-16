@@ -19,7 +19,7 @@ export default withStyles(styles)(
 
       return (
         <Paper className={classes.root}>
-          <Typography variant="display1" align="center" gutterBottom>
+          <Typography variant="h1" align="center" gutterBottom>
             Hello!
           </Typography>
         </Paper>
