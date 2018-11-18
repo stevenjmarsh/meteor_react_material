@@ -1,21 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> matches render snapshot 1`] = `
-<div
-  className="Header-root-1"
->
-  <header
-    className="MuiPaper-root-11 MuiPaper-elevation4-17 MuiAppBar-root-2 MuiAppBar-positionStatic-6 MuiAppBar-colorPrimary-9"
+Array [
+  <div
+    className="Header-root-1"
   >
-    <div
-      className="MuiToolbar-root-38 MuiToolbar-regular-40 MuiToolbar-gutters-39"
+    <header
+      className="MuiPaper-root-11 MuiPaper-elevation4-17 MuiAppBar-root-2 MuiAppBar-positionStatic-6 MuiAppBar-colorPrimary-9"
     >
-      <h6
-        className="MuiTypography-root-42 MuiTypography-h6-59 MuiTypography-colorInherit-71"
+      <div
+        className="MuiToolbar-root-38 MuiToolbar-regular-40 MuiToolbar-gutters-39"
       >
-        Hello!
-      </h6>
-    </div>
-  </header>
-</div>
+        <h6
+          className="MuiTypography-root-42 MuiTypography-h6-59 MuiTypography-colorInherit-71"
+        >
+          Hello!
+        </h6>
+      </div>
+    </header>
+  </div>,
+  <div
+    className="Content-container-77"
+  >
+    <p>
+      This is your content.
+    </p>
+  </div>,
+]
 `;
