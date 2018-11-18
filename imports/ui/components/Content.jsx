@@ -5,20 +5,20 @@ import { withStyles } from "@material-ui/core/styles";
 const styles = {
   container: {
     display: "flex",
-  },
-  content: {
-    border: "2px solid green",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "100vh",
   },
 };
 
 const Content = props => {
   const {
-    classes: { container, content },
+    classes: { container },
   } = props;
 
   return (
     <div className={container}>
-      <p className={content}>This is your content.</p>
+      <p>This is your content.</p>
     </div>
   );
 };
