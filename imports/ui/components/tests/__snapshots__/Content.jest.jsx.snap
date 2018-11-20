@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Content /> should match render snapshot 1`] = `
+<div
+  className="Content-container-1"
+>
+  <p>
+    This is your content.
+  </p>
+</div>
+`;
