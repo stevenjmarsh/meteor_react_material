@@ -40,7 +40,7 @@ A simple boilerplate to start projects with Meteor, React, and Material-UI.
 
 #### Default test file names / locations for Jest, Meteor, and Chimp
 * [jest](http://facebook.github.io/jest/docs/configuration.html#testregex-string):
-  - loads all test files: `(/tests/.*|(\\.jest\\.jsx?$)`
+  - loads all test files: `(/tests/.*|(\\.test\\.jsx?$)`
 * ['meteor test'](https://guide.meteor.com/testing.html#test-modes): (NOTE: Typically not used for testing. Use --full-app.)
   - loads all test files: `"*.test[s].js[x]"` or `"*.spec[s].js[x]"`
       + ignores any files in any `tests/` directory
@@ -49,21 +49,15 @@ A simple boilerplate to start projects with Meteor, React, and Material-UI.
   - loads all test files: `"*.app-test[s].js"` or `"*.app-spec[s].js"`
       + ignores any files in any `tests/` directory
   - DOES eagerly load application code, as meteor build normally would
-* [chimp](https://chimp.readme.io/docs/command-line-options):
-  - loads end to end tests from: `tests/end-to-end`
-  - test files should be named `*_spec.js`
-  - __RECOMMENDED__: run meteor server in test mode, this uses the meteor test database instead of development database (there is a package.json script to do so)
 
 #### Project test file location and naming convention
  * The following convention allows you to colocate test files in the same or sub directory of the system under test, without the test runners picking up the incorrect test file
     + place all meteor test files in the same directory as the module / system under test
     + place all jest unit tests in 'tests' sub directory of the module / system under test
-        - set [jest test filenames (testRegex)](http://facebook.github.io/jest/docs/configuration.html#testregex-string) to `/tests/.*\\.jest\\.jsx?$`
-        - jest file name convention `filename.jest.js[x]`
-    + place all chimp tests in 'tests' sub directory of the project root
-        - NOTE: create additional sub directories in this directory to organize tests
+        - set [jest test filenames (testRegex)](http://facebook.github.io/jest/docs/configuration.html#testregex-string) to `/tests/.*\\.test\\.jsx?$`
+        - jest file name convention `filename.test.js[x]`
  * example:
-    + `<project-root>/.../system-under-test/tests/Navbar.jest.jsx` (tests run by __jest__ only)
+    + `<project-root>/.../system-under-test/tests/Navbar.test.jsx` (tests run by __jest__ only)
     + `<project-root>/.../system-under-test/Navbar.tests.jsx` (tests run by __'meteor test'__ only)
     + `<project-root>/.../system-under-test/calledMethods.app-tests.js` (tests run by __'meteor test --full-app'__ only)
     + `<project-root>/tests/end-to-end/.../*_spec.js` (tests to be run by __'chimp'__)

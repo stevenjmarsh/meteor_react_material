@@ -4,9 +4,11 @@
   "scripts": {
     "start": "meteor run --settings settings.json",
     "lint": "eslint . --ext .js,.jsx --ignore-pattern 'packages/**'",
-    "test": "npm run unit-test",
-    "unit-test": "jest -c .jest-config.json",
-    "update-snapshots": "jest -c .jest-config.json --updateSnapshot",
+    "test": "npm run test:unit",
+    "test:unit": "jest -c jest.json",
+    "test:unit:watch": "jest -c jest.json --watchAll",
+    "test:unit:watch:verbose": "jest -c jest.json --watchAll --verbose",
+    "update-snapshots": "jest -c jest.json --updateSnapshot",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
@@ -27,8 +29,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
