@@ -4,9 +4,11 @@
   "scripts": {
     "start": "meteor run --settings settings.json",
     "lint": "eslint . --ext .js,.jsx --ignore-pattern 'packages/**'",
-    "test": "npm run unit-test",
-    "unit-test": "jest -c .jest-config.json",
-    "update-snapshots": "jest -c .jest-config.json --updateSnapshot",
+    "test": "npm run test:unit",
+    "test:unit": "jest -c jest.json",
+    "test:unit:watch": "jest -c jest.json --watchAll",
+    "test:unit:watch:verbose": "jest -c jest.json --watchAll --verbose",
+    "update-snapshots": "jest -c jest.json --updateSnapshot",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {

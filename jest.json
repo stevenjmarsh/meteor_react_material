@@ -9,6 +9,5 @@
     "/node_modules/",
     "/.meteor/",
     "/public/"
-  ],
-  "testRegex": "/tests/.*\\.jest\\.jsx?$"
+  ]
 }
